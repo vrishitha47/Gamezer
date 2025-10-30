@@ -4,6 +4,7 @@ import GuessNumber from './components/GuessNumber.jsx'
 import DifficultySelect from './TicTacToe/DifficultySelect.jsx'
 import MediumTicTacToe from './TicTacToe/MediumTicTacToe.jsx'
 import HardTicTacToe from './TicTacToe/HardTicTacToe.jsx'
+import RockPaperScissors from './components/RockPaperScissors.jsx'
 
 function HomePage() {
   return (
@@ -15,6 +16,9 @@ function HomePage() {
         </Link>
         <Link to="/tic" className="game-link">
           🎯 Tic Tac Toe Game ❌ ⭕
+        </Link>
+        <Link to="/rps" className="game-link">
+          🪨📄✂️ Rock Paper Scissors
         </Link>
       </div>
     </div>
@@ -29,6 +33,7 @@ function App() {
       <Route path="/tic" element={<DifficultySelect />} />
       <Route path="/tic/medium" element={<MediumTicTacToe />} />
       <Route path="/tic/hard" element={<HardTicTacToe />} />
+      <Route path="/rps" element={<RockPaperScissors />} />
     </Routes>
   )
 }

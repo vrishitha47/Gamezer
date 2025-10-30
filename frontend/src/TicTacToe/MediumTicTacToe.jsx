@@ -102,7 +102,7 @@ const TicTacToe = () => {
       </button>
 
       <Link to="/" className="back-link">🏠 Back to Home</Link>
-      
+      <Link to="/tic" className="back-link">🔙 Back to Difficulty Select</Link>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .tictactoe-container {
   text-align: center;
-  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  background: linear-gradient(135deg, #e6c9fe, #ffc7f2);
   color: white;
   padding: 40px;
   border-radius: 20px;
@@ -47,7 +47,7 @@
 }
 
 .reset {
-  background-color: #ff4757;
+  background-color: #fd6673;
   border: none;
   color: white;
   padding: 10px 20px;
