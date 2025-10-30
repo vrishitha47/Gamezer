@@ -50,10 +50,11 @@ src/
 ## ▶️ How to Run
 
 1. Clone the repository:
-   ```bash
+ ```bash
    git clone https://github.com/yourusername/gamezer.git
    cd gamezer
 ```
+
 Install dependencies:
 ```bash
 npm install
