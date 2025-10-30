@@ -1,0 +1,146 @@
+.guess-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  color: #4a5568;  /* Soft dark gray */
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 30px rgba(192, 202, 216, 0.4);
+  animation: fadeIn 0.5s ease-in;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.guess-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.guess-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.guess-input {
+  padding: 1rem;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;  /* Light gray border */
+  background: white;
+  text-align: center;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(192, 202, 216, 0.2);
+  color: #4a5568;
+}
+
+.guess-input:focus {
+  outline: none;
+  border-color: #9f7aea;  /* Soft purple */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(192, 202, 216, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: 2px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(192, 202, 216, 0.2);
+  background: white;
+}
+
+.guess-btn {
+  color: #805ad5;  /* Soft purple */
+  border-color: #9f7aea;  /* Lighter purple */
+}
+
+.guess-btn:hover {
+  background: #9f7aea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(159, 122, 234, 0.2);
+}
+
+.reset-btn {
+  color: #f56565;  /* Soft red */
+  border-color: #fc8181;  /* Lighter red */
+}
+
+.reset-btn:hover {
+  background: #fc8181;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(252, 129, 129, 0.2);
+}
+
+.message {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: white;
+  animation: fadeIn 0.3s ease-in;
+  border: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #805ad5;  /* Soft purple */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s ease;
+  border: 2px solid #9f7aea;
+}
+
+.back-link:hover {
+  background: #9f7aea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(159, 122, 234, 0.2);
+}
+
+.attempts {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 1rem 0;
+  border: 2px solid #9f7aea;
+  color: #805ad5;  /* Soft purple */
+}

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f0f4f8;  /* Soft light blue-gray background */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.home-container {
+  color: #4a5568;  /* Soft dark gray for text */
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);  /* Translucent white */
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 30px rgba(192, 202, 216, 0.4);  /* Soft shadow */
+  animation: fadeIn 0.5s ease-out;
+  border: 1px solid rgba(226, 232, 240, 0.8);  /* Very light gray border */
+  backdrop-filter: blur(10px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #9f7aea;  /* Soft purple */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.game-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.game-link {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  color: #4a5568;  /* Soft dark gray */
+  text-decoration: none;
+  background: #fff;  /* White background */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(192, 202, 216, 0.4);  /* Soft shadow */
+  border: 1px solid #e2e8f0;  /* Very light gray border */
+  font-weight: 500;
+}
+
+.game-link:hover {
+  transform: translateY(-3px);
+  background: #f8f9ff;  /* Very light blue-white */
+  box-shadow: 0 6px 20px rgba(192, 202, 216, 0.6);
+  border-color: #9f7aea;  /* Soft purple border on hover */
+  color: #9f7aea;  /* Soft purple text on hover */
+}
